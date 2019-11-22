@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<title>Index</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<body>
+
+	<div class="details">  
+      <h3 class="h3">Available CDs</h3>    
+        <hr>
+            <div class="left">
+                <div class="eachDetails"><p id="name"><pre class="header">Item Number             Song                    Artist                      Available                         Unit Price(Tk)</pre></p></div>
+				<div class="eachDetails"><p id="name"><pre >1             Song                    Artist                      Available                         150</pre></p></div>
+                <div class="eachDetails"><p id="name"><pre >2             Song                    Artist                      Available                         300</pre></p></div>
+                <div class="eachDetails"><p id="name"><pre >3              Song                   Artist                      Available                         240</pre></p></div>
+                <div class="eachDetails"><p id="name"><pre >4             Song                    Artist                      Available                         320</pre></p></div>
+                <div class="eachDetails"><p id="name"><pre >5             Song                    Artist                      Available                         190</pre></p></div>
+
+          </div><br><br> 
+    </div>
+		<div class="form">
+			<form name="loginForm" method="post" action="">
+		    <input type="text" name="firstname" placeholder="First Name" /> <br/>
+		    <input type="text" name="family" placeholder="Family Name" /> <br/>
+		    <input type="text" name="postcode" placeholder="Post Code" /> <br/>
+		    <input type="text" name="credit" placeholder="Credit Card Number" /> <br/>
+		    <input type="text" name="song" placeholder="Name of the CD" /> <br/>
+		    <input type="text" name="noofCDs" placeholder="Number of pieces" /> <br/>
+
+    		<input type="submit" class="btn" value="Submit" onclick="reload()" />
+		</form>
+		</div>
+
+		<style type="text/css">
+			.details{
+    min-height: 300px;
+    height: auto;
+    width: 55%;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid rgb(228, 228, 228);
+    border-top: 2px solid red;
+    margin: auto;
+    margin-top: 2%
+}
+
+.details hr{
+    width: 80%;
+    color: rgb(238, 237, 237);
+    opacity: 0.8;
+}
+
+.h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.details i{
+    height: 15px;
+    display: block;
+    margin-top: 2%;
+    /* margin-left: 12%; */
+}
+
+.details pre{
+    margin-left: 1%; 
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-weight: 100;
+}
+
+.header{
+    font-weight: bold;
+}
+
+
+.eachDetails{
+    text-align: center;
+    min-height: 30px;
+    height: auto;
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgb(228, 228, 228);
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.eachDetails:hover{
+    background-color: rgb(218, 218, 218);
+}
+.left{
+    /* float: left; */
+    margin-left: 5%;
+}
+.right{
+    /* float: left; */
+    margin-left: 15%;
+}
+
+.defaultDetails{
+    text-align: center;
+    min-height: 30px;
+    height: auto;
+    width: 40%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgb(228, 228, 228);
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.defaultDetails:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.form{
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgb(233, 233, 233);
+	border-radius: 10px 10xp 10px 10px;
+	width: 50%;
+}
+
+input{
+	margin-left: 25%;
+	width: 50%;
+	margin-top: 1%;
+	height: 15p;
+}
+
+.btn{
+    margin-left: 380px;
+    height: 45px; 
+    width: 150px;
+    border: none;
+    background-color: rgb(25, 124, 236);
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: red;
+}
+		</style>
+
+		<script type="text/javascript">
+			function reload(){
+				console.log("reload");
+				window.location = "Index.html";
+			}
+		</script>
+		
+	</body>
+</html>
